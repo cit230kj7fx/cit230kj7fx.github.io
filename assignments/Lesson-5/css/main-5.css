@@ -1,19 +1,49 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
 body {
   font-size: 16px;
+  line-height: 32px;
   /* Declare the base font-family - from google font api or other */
+  font-family: 'Lato', sans-serif;
+  color: #006600;
+
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1.1rem auto;
+    padding: .5rem;
+    max-width: 30rem;
 }
 
-header {}
-header h1 {}
-header img {}
+header {
+    border-bottom: 1px solid #bbb;
+}
+
+header, footer, footer a{
+    margin: 1.25rem;
+    text-align: center;
+    background-color: #6699ff;
+    color: whitesmoke;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #302b27;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+header img {
+    width: 25%;
+    height: 25%;
+    float: left;
+}
 header .subheading {}
 
 nav {}
@@ -30,10 +60,11 @@ main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
 section {}
+section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 50%; /* fill the page in the small/phone view */
+  margin: 1.25rem;
 }
 
 footer {}
