@@ -2,6 +2,10 @@
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
   nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    nav ul li a {
+        display: inline-block;
+    }
   
   section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
   

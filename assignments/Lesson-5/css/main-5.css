@@ -4,10 +4,12 @@
 
 body {
   font-size: 16px;
+    /*
   line-height: 32px;
-  /* Declare the base font-family - from google font api or other */
+  Declare the base font-family - from google font api or other */
   font-family: 'Lato', sans-serif;
-  color: #006600;
+  font-weight: 300;
+  color: #333;
 
 }
 
@@ -19,11 +21,13 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 }
 
 header {
-    border-bottom: 1px solid #bbb;
+    border-bottom: 2px solid #bbb;
 }
 
 header, footer, footer a{
+    /*
     margin: 1.25rem;
+    */
     text-align: center;
     background-color: #6699ff;
     color: whitesmoke;
@@ -46,13 +50,36 @@ header img {
 }
 header .subheading {}
 
-nav {}
+nav {
+    background-color: #1a9835;
+}
 nav button {}
-nav ul {}
-nav ul li {}
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width:100%;
+    list-style: none;
+}
+nav ul li a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+nav ul li.active a {
+    background-color: #17852f;
+}
+nav ul li a:hover {
+    background-color: #17852f; 
+}
 
 main {}
 main h2 {}
