@@ -25,9 +25,7 @@ header {
 }
 
 header, footer, footer a{
-    /*
     margin: 1.25rem;
-    */
     text-align: center;
     background-color: #6699ff;
     color: whitesmoke;
@@ -50,8 +48,9 @@ header img {
 }
 header .subheading {}
 
-nav {
+nav { /*
     background-color: #1a9835;
+    */
 }
 nav button {}
 
