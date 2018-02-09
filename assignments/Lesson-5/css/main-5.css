@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  line-height: normal;
+  line-height: 32px;
     
   /* Declare the base font-family - from google font api or other */
   font-family: 'Lato', sans-serif;
@@ -39,8 +39,8 @@ header h1 {
 }
 
 header img {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     float: left;
 }
 
@@ -62,7 +62,7 @@ nav ul {
     margin: .25rem 0 0 .25rem;
 }
 nav ul li {
-    background-color: green;
+    background-color: #17852f;
     float: left;
     width:auto;
     list-style: none;
@@ -71,20 +71,20 @@ nav ul li a {
     display: inline-block;
     color: #eee;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: .8rem;
     font-weight: 400;
     padding: 0.5rem 0;
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 nav ul li.active a {
-    background-color: #17852f;
+    background-color: darkgreen;
 }
 nav ul li a:hover {
-    background-color: #17852f; 
+    background-color: darkgreen; 
 }
 
-main {}
+main {margin-left: 1rem}
 
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
