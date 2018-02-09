@@ -4,20 +4,20 @@
 
 body {
   font-size: 16px;
-    /*
-  line-height: 32px;
-  Declare the base font-family - from google font api or other */
+  line-height: normal;
+    
+  /* Declare the base font-family - from google font api or other */
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: #333;
-
+  
 }
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    margin: 1.1rem auto;
-    padding: .5rem;
-    max-width: 30rem;
+    margin: auto;
+    padding: 0, .25rem;
+    max-width: auto;
 }
 
 header {
@@ -25,38 +25,40 @@ header {
 }
 
 header, footer, footer a{
-    margin: 1.25rem;
+    /*
+    margin: 1.0rem;
+    */
     text-align: center;
     background-color: #6699ff;
     color: whitesmoke;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #302b27;
 }
 
-header h2 {
-    font-size: 1.1rem;
-    text-align: center;
-}
-
 header img {
-    width: 25%;
-    height: 25%;
+    width: 100px;
+    height: 100px;
     float: left;
 }
-header .subheading {}
 
-nav { /*
-    background-color: #1a9835;
-    */
+header .subheading {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
 }
-nav button {}
+
+nav { 
+    background-color: #1a9835;
+    
+}
+nav button {display: none;}
 
 nav ul {
     padding: 0;
-    margin: 0;
+    margin: .25rem 0 0 .25rem;
 }
 nav ul li {
     float: left;
@@ -64,7 +66,7 @@ nav ul li {
     list-style: none;
 }
 nav ul li a {
-    display: block;
+    display: inline-block;
     color: #000;
     text-decoration: none;
     font-size: 0.8rem;
@@ -80,7 +82,9 @@ nav ul li a:hover {
     background-color: #17852f; 
 }
 
-main {}
+main {
+    margin: .25rem .25rem .25rem .25rem);
+}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
