@@ -5,6 +5,7 @@
 body {
   font-size: 16px;
   line-height: 32px;
+  max-width: 40rem;
     
   /* Declare the base font-family - from google font api or other */
   font-family: 'Lato', sans-serif;
@@ -16,24 +17,26 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: auto;
-    padding: 0, 1.25rem ;
+    padding: 0, .25rem ;
     max-width: auto;
 }
+/*
 
 header {
     border-bottom: 2px solid #bbb;
 }
+*/
 
 header, footer, footer a{
-    /*
-    margin: 1.0rem;
+    
+    margin: 0rem;
    
     text-align: center;
     
     background-color: #6699ff;
    
     color: black;
-     */
+     
 }
 
 header h1 {
@@ -102,7 +105,9 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin: 0.25rem;
 }
 
-footer {}
+footer {
+    margin: 1rem;
+}
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
