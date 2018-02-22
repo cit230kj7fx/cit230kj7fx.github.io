@@ -16,7 +16,7 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: auto;
-    padding: 0, .25rem;
+    padding: 0, 1.25rem ;
     max-width: auto;
 }
 
@@ -25,17 +25,21 @@ header {
 }
 
 header, footer, footer a{
-    
+    /*
     margin: 1.0rem;
    
     text-align: center;
+    
     background-color: #6699ff;
-    color: whitesmoke;
+   
+    color: black;
+     */
 }
 
 header h1 {
     font-size: 2.0rem;
-    color: #302b27;
+    text-align: center;
+    color: black;
 }
 
 header img {
