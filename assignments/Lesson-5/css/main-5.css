@@ -61,7 +61,7 @@ nav {
     background-color: #1a9835;
     
 }
-nav button {display: none;}
+nav button {display: block;}
 
 nav ul {
     
