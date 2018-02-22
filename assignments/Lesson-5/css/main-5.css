@@ -94,8 +94,8 @@ section {}
 section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: 50%; /* fill the page in the small/phone view */
-  margin: 1.25rem;
+  width: 25%; /* fill the page in the small/phone view */
+  margin: 0.25rem;
 }
 
 footer {}
