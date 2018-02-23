@@ -1,6 +1,7 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model 
+*/
 
 body {
   font-size: 16px;
