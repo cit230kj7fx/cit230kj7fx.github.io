@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
@@ -113,4 +114,119 @@ footer {
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
+=======
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  line-height: 32px;
+  max-width: 40rem;
+    
+  /* Declare the base font-family - from google font api or other */
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+  
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: auto;
+    padding: 0, .25rem ;
+    max-width: auto;
+}
+/*
+
+header {
+    border-bottom: 2px solid #bbb;
+}
+*/
+
+header, footer, footer a{
+    
+    margin: 0rem;
+   
+    text-align: center;
+    
+    background-color: #6699ff;
+   
+    color: black;
+     
+}
+
+header h1 {
+    font-size: 2.0rem;
+    text-align: center;
+    color: black;
+}
+
+header img {
+    width: 96px;
+    height: 96px;
+    float: left;
+}
+
+header .subheading {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+nav { 
+    background-color: #1a9835;
+    
+}
+nav button {display: block;}
+
+nav ul {
+    
+    padding: 0;
+    margin: .25rem 0 0 .25rem;
+}
+nav ul li {
+    background-color: #17852f;
+    float: left;
+    width:auto;
+    list-style: none;
+}
+nav ul li a {
+    display: inline-block;
+    color: #eee;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+nav ul li.active a {
+    background-color: darkgreen;
+}
+nav ul li a:hover {
+    background-color: darkgreen; 
+}
+
+main {margin-left: 1rem}
+
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 50%; }
+
+section {}
+section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 25%; /* fill the page in the small/phone view */
+  margin: 0.25rem;
+}
+
+footer {
+    margin: 1rem;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+>>>>>>> c1a63730bb070cf32f4f5a6c2c33adc10aba2952
 /* Other Class Selectors */
