@@ -23,12 +23,12 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     padding: 0, .25rem ;
     max-width: auto;
 }
-/*
+
 
 header {
     border-bottom: 2px solid #bbb;
 }
-*/
+
 
 header, footer, footer a{
     
@@ -60,25 +60,43 @@ header .subheading {
     font-weight: 500;
 }
 
+/*
 nav { 
     background-color: #1a9835;
     
 }
-nav button {display: block;}
+*/
+nav button{
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 3%;
+}
 
 nav ul {
     
     padding: 0;
-    margin: .25rem 0 0 .25rem;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+nav ul.show{
+    display: flex;
+}
+
+nav ul.hide{
+    display: none;
+}
+
 nav ul li {
     background-color: #17852f;
-    float: left;
-    width: auto;
+    flex-basis: 100%;
     list-style: none;
 }
+
 nav ul li a {
-    display: inline-block;
+    display: block;
     color: #eee;
     text-decoration: none;
     font-size: .8rem;
@@ -87,13 +105,16 @@ nav ul li a {
     text-align: center;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
 nav ul li.active a {
     background-color: darkgreen;
 }
+
 nav ul li a:hover {
     background-color: darkgreen; 
 }
 
+/*  Main  */
 main {margin-left: 1rem}
 
 main h2 {}
@@ -135,3 +156,8 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 
 
 /* Other Class Selectors */
+.clearfix:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

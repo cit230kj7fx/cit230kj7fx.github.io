@@ -3,24 +3,24 @@
   
   nav button { display:none; }  /* hamburger button does not need to be shown */
     
-  nav ul li a {
-        display: block;
+    nav ul.hide{
+        display: flex;
     }
+    
+    
   nav ul {
-      /*
+      
 		margin-left: 2%;
-      */
-		border-left: 1px solid rgba(0,0,0,0.3);
+        border-left: 1px solid rgba(0,0,0,0.3);
+        flex-wrap: nowrap;
 	}
     
 	nav ul li {float: left;	width: auto;}
 	nav ul li a {
-		padding: .5rem 1rem;
 		border-right: 1px solid rgba(0,0,0,0.3);
 		border-bottom: none;
 	}
     
-
   div.current p{font-weight: 600;}   
   section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
   
