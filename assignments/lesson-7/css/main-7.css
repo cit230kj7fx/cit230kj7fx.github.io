@@ -69,8 +69,8 @@ nav {
 nav button{
     display: block;
     position: absolute;
-    top: 0.5rem;
-    right: 3%;
+    margin-top: 0.1rem;
+    margin-left: 5rem;
 }
 
 nav ul {
