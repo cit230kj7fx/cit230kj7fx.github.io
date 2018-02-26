@@ -153,6 +153,7 @@ article p.town-article img{
 
 footer {
     margin: 1rem;
+    background-color: #6699ff;
 }
 footer aside {}
 footer>p {} /* This structure refers to p elements that are direct children of the footer element */
