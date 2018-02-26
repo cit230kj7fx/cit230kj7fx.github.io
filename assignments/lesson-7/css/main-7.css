@@ -32,7 +32,7 @@ header {
 
 header, footer, footer a{
     
-    margin: 0rem;
+    margin: 0.2rem;
    
     text-align: center;
     
@@ -42,16 +42,16 @@ header, footer, footer a{
      
 }
 
+header img {
+    width: 96px;
+    height: 96px;
+    float: center;
+}
+
 header h1 {
     font-size: 2.0rem;
     text-align: center;
     color: black;
-}
-
-header img {
-    width: 96px;
-    height: 96px;
-    float: left;
 }
 
 header .subheading {
