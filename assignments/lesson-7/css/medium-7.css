@@ -1,4 +1,4 @@
-@media only screen and (min-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
   nav button { display:none; }  /* hamburger button does not need to be shown */
@@ -27,4 +27,10 @@
     /*
   article p.town-article img { width: 62.666%; float:right; }   responsive images */
 
+
+/*  Weather Gallery Grid */
+	div.weatherGallery {
+  		grid-template-columns: repeat(2, 49%);
+		grid-gap:2%;
+	}
 }

@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Franklin Weather</title>
+  <title>Weather Gallery</title>
   <meta name="author" content="Mike Odom">
-  <meta name="description" content="First Franklin Page">
+  <meta name="description" content="Weather Gallery Pictures">
     
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">  <!-- Google API font reference -->
@@ -44,76 +44,40 @@
     
   <main>
     <br>
-    <h1>The City of Franklin</h1>
-    <figure class="photofullwidth">
-      <img src="images/franklin_400.jpg" alt="mountain sun" sizes="100vw"
-           srcset="images/franklin_400.jpg 600w, images/franklin_800.jpg 800w, images/franklin_1200.jpg 1200w">
-    </figure>
-    <section class="summary">
-      <h2>Weather Summary</h2>    
-      <div class="highlow">
-        <p>High: 90&deg;</p>  
-        <p>Low: 66&deg;</p>  
-      </div>
-      <div class="current">
-        <p>Sunny</p>
-        <picture>
-            <img src="images/sun.jpg" alt="sun" width="75" height="75">
-        </picture>
-      </div>   
-      <div class="conditions">
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>  
-      </div>           
-    </section>
-        
-    <section class="forecast">
-      <h3>10 Day Forecast</h3>
-      <table>
-	    <thead>
-          <tr>
-            <th>Day 1</th>
-            <th>Day 2</th>
-            <th>Day 3</th>
-            <th>Day 4</th>
-            <th>Day 5</th>
-            <th>Day 6</th>
-            <th>Day 7</th>
-            <th>Day 8</th>
-            <th>Day 9</th>
-            <th>Day 10</th>
-          </tr>
-		</thead>
-        <tbody>  
-          <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
-          </tr>
-		</tbody>
-      </table>
-    </section>
-      
-      
-    <article>
-      <h3>Franklin Breaks Record</h3>
-        
-      <p class="town-article"><img src="images/cycling_small.jpg" alt="peleton">
-         Annual Franklin cyclethon sets a record for both the high temperature and the number of entrants. Twelve teams of eight cyclists each are racing this year in the event. The race will wrap up on Saturday. Cheer on your favorite team!
-         <br>
-         Be alert for temporary road closures associated with the race. Remember to share the road with the spectators on bicycles.
-        
-      </p>
-        
-     </article>		  
-  
+     <h1>Gallery</h1>
+    
+    <div class="weatherGallery">
+    <figure>
+    <img src="images/rexburg-winter400.jpg" alt="Rexburg Winter" >
+		<figcaption>A Sunny Winter Day in Rexburg</figcaption>
+	</figure>
+    
+    <figure>
+    <img src="images/california-beach400.jpg" alt="Beach" >
+		<figcaption>A Beach in Santa Barbara</figcaption>
+	</figure>
+    
+    <figure>
+    <img src="images/hawaii_sunset_and_wave400x.jpg" alt="Sunset" >
+		<figcaption>A Hawaiian Sunset</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/lighthousewave400.jpg" alt="Lighthouse and Wave" >
+		<figcaption>A Big Wave hits Lighthouse</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/string-lake400.jpg" alt="Stirng Lake Sunny Day" >
+		<figcaption>A Sunny Day at String Lake WY</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/usatornado400.jpg" alt="Tornado and Lightening" >
+		<figcaption>A Tornado and Lightening</figcaption>
+	</figure>
+</div>
+     
   </main>
     
   <footer>

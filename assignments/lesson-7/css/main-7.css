@@ -149,6 +149,15 @@ article p.town-article img{
     margin-bottom: 1.0rem;
     
 }
+/*  Weather Gallery Grid  */
+div.weatherGallery {
+	padding: 0 2%;
+	display: grid;
+  	grid-template-columns: repeat(1, 100%);
+}
+div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
+div.weatherGallery figure img {width: 100%;}
+div.weatherGallery figure figcaption {text-align: center; font-size: 1.0rem;}
 
 footer {
     margin: 1rem;
