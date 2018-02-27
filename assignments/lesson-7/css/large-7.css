@@ -8,9 +8,9 @@
 
 /*  Weather Gallery Grid */
 	div.weatherGallery {
-  		grid-template-columns: repeat(3, 32%);
+  		grid-template-columns: 1fr 1fr 1fr;
 	}
 	div.weatherGallery figure:hover {
-		box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+		box-shadow: 5px 10px 15px darkblue;
 	}
 }

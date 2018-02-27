@@ -153,7 +153,7 @@ article p.town-article img{
 div.weatherGallery {
 	padding: 0 2%;
 	display: grid;
-  	grid-template-columns: repeat(1, 100%);
+  	grid-template-columns: auto;
 }
 div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
 div.weatherGallery figure img {width: 100%;}
