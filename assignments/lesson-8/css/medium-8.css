@@ -21,7 +21,11 @@
 		border-bottom: none;
 	}
     
-  div.current p{font-weight: 600;}   
+    main picture.hidesmall{
+        display: flex;
+    }
+    div.current p{font-weight: 600;}  
+  
   section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
   
     /*

@@ -21,7 +21,7 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    margin: auto;
+    margin: 1rem;
     padding: 0 0.25rem;
     max-width: none;
     
@@ -32,36 +32,23 @@ header {
 }
 
 
-header, footer, footer a{
-    /*
-    margin: 0.2rem;
-   
-    text-align: center;
-    
-    background-color: #6699ff;
-    */
-    color: black;
-     
-}
-
 header img {
     width: 200px;
-    float: center;
+    align-content: center;
 }
 
-header h1 {
-    background-color: #6699ff;
-    font-size: 2.0rem;
+header .headings{
+    background-color: cornflowerblue;
     text-align: center;
     color: black;
 }
+header h1 {
+    font-size: 2.0rem;
+    }
 
-header .subheading {
-    background-color: #6699ff;
+header h2 {
     font-size: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-}
+    }
 
 /*
 nav { 
@@ -98,7 +85,6 @@ nav ul li {
 }
 
 nav ul li a {
-    display: block;
     color: #eee;
     text-decoration: none;
     font-size: .8rem;
@@ -120,6 +106,9 @@ nav ul li a:hover {
 main {margin-left: 1rem}
 
 main h2 {}
+main picture.hidesmall{
+    display:none;
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 90%; }
 
@@ -128,6 +117,29 @@ section.summary {
     border-width: medium;
 }
 section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
+
+/* Form Design */
+
+form fieldset {margin: 1rem 2%; border: 1px solid #1f69be; border-radius: 10px;}
+form legend {font-weight: 700; color: #999; margin-left: 2%;}
+form div {
+	display: block;
+	margin-top: 1rem;
+}
+form span {
+	display: block;
+	color: #1a9835;
+	font-size: .75rem;
+}
+form input.submitBtn {
+	background-color: #1f69be;
+	border-radius: 10px;
+	border: none;
+	margin-left: 2%;
+	color: #fff;
+	padding: .6rem 2rem;
+	margin-bottom: 1rem;
+}
 
 article {
     width: auto;

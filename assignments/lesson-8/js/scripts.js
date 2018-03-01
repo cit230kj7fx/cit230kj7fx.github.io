@@ -19,7 +19,7 @@ if (pageHREF !== "") {
 
 // --------------- RESPONSIVE MENU SCRIPT --------------------
 /* Toggle between show and hide */
-function myFunction() {
+function toggleNavMenu() {
     var x = document.getElementById("mainmenu");
     if (x.className === "show") {
         x.className = "hide";
@@ -41,7 +41,7 @@ var day = d.getDate();
 var monthName = theMonths[d.getMonth()];
 var year = d.getFullYear();
 
-document.getElementById("displayDate").innerHTML = dayName + ", " + day + " " + monthName + " " + year;
+document.getElementById("currentdate").innerHTML = dayName + ", " + day + " " + monthName + " " + year;
 
 // --------------- WINDCHILL SCRIPT --------------------
 var high = 90;
