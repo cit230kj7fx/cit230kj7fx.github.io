@@ -120,12 +120,14 @@ section.forecast { display: none; }  /* show the 10-day forecast with the medium
 
 /* Form Design */
 
-form fieldset {margin: 1rem 2%; border: 1px solid #1f69be; border-radius: 10px;}
-form legend {font-weight: 700; color: #999; margin-left: 2%;}
+form fieldset {margin: 1rem 2%; border: 3px solid #1f69be; border-radius: 10px;}
+form legend {font-weight: 700; color: #000; margin-left: 2%;}
+
 form div {
-	display: block;
+	display;align-content: flex-start;
 	margin-top: 1rem;
 }
+
 form span {
 	display: block;
 	color: #1a9835;
