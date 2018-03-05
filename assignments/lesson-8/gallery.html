@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Gallery</title>
+  <meta name="author" content="Mike Odom">
+  <meta name="description" content="Weather Gallery Pictures">
+    
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+  <script src="js/responsiveMenu.js" defer></script>
+</head>
+    
+<body>
+
+  <header>
+    <picture>
+    <img src="images/site-logo.png" alt="The site logo" >
+    </picture>
+    <h1>Perfect Weather</h1>
+    <div class="subheading">Mostly Misleading - Sometimes Correct</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+      <button onclick="toggleNavMenu()">&#9776;</button>
+     
+    <ul class="hide" id="nav-container">
+    	<li><a href="/index.html">Home</a></li>
+    	<li><a href="franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <br>
+     <h1>Gallery</h1>
+    
+    <div class="weatherGallery">
+    <figure>
+    <img src="images/rexburg-winter400.jpg" alt="Rexburg Winter" >
+		<figcaption>A Sunny Winter Day in Rexburg</figcaption>
+	</figure>
+    
+    <figure>
+    <img src="images/california-beach400.jpg" alt="Beach" >
+		<figcaption>A Beach in Santa Barbara</figcaption>
+	</figure>
+    
+    <figure>
+    <img src="images/hawaii_sunset_and_wave400x.jpg" alt="Sunset" >
+		<figcaption>A Hawaiian Sunset</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/lighthousewave400.jpg" alt="Lighthouse and Wave" >
+		<figcaption>A Big Wave hits Lighthouse</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/string-lake400.jpg" alt="Stirng Lake Sunny Day" >
+		<figcaption>A Sunny Day at String Lake WY</figcaption>
+	</figure>
+   
+   <figure>
+    <img src="images/usatornado400.jpg" alt="Tornado and Lightening" >
+		<figcaption>A Tornado and Lightening</figcaption>
+	</figure>
+</div>
+     
+  </main>
+    
+  <footer>
+    <aside>
+      <p>Perfect Weather LLC</p>
+      <p>Puxatawny PA 15767</p>
+      <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+  
+  <!--
+  <script src="js/hamburger.js"></script>
+  -->
+  <script src="js/dateScript.js" async></script>
+  
+
+</body>
+
+</html>
