@@ -71,7 +71,7 @@ nav ul {
 }
 
 nav ul.show{
-    display: flex;
+    display: block;
 }
 
 nav ul.hide{
