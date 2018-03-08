@@ -125,7 +125,8 @@ form fieldset {margin: 1rem 2%; border: 3px solid #1f69be; border-radius: 10px;}
 form legend {font-weight: 700; color: #000; margin-left: 2%;}
 
 form div {
-	display;align-content: flex-start;
+	display: flex;
+    align-content: flex-start;
 	margin-top: 1rem;
 }
 
