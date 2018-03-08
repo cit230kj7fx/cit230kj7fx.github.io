@@ -110,7 +110,7 @@ main picture.hidesmall{
     display:none;
 }
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 90%; }
+main figure img.constructionphoto {width: 60%;}
 main figure figcaption { font-weight: 700; }
 
 section.summary {
