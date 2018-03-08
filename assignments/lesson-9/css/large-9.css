@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+    /* article p.town-article img { width: 29.333%; }
+    */
+  
+/*  Weather Gallery Grid */
+	div.weatherGallery {
+  		grid-template-columns: 1fr 1fr 1fr;
+	}
+	div.weatherGallery figure:hover {
+		box-shadow: 5px 10px 15px darkblue;
+	}
+}

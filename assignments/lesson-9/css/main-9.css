@@ -1,0 +1,190 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model 
+*/
+
+body {
+    margin: 3%;
+    padding: 0;
+    max-width: 94%;
+    max-height: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    
+  /* Declare the base font-family - from google font api or other */
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #333;
+  
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 1rem;
+    padding: 0 0.25rem;
+    max-width: none;
+    
+}
+
+header {
+    border-bottom: 2px solid #bbb;
+}
+
+
+header img {
+    width: 200px;
+    align-content: center;
+}
+
+header .headings{
+    background-color: cornflowerblue;
+    text-align: center;
+    color: black;
+}
+header h1 {
+    font-size: 2.0rem;
+    }
+
+header h2 {
+    font-size: 1.5rem;
+    }
+
+/*
+nav { 
+    background-color: #1a9835;
+    }
+*/
+nav button{
+    display: block;
+    position: absolute;
+    margin-top: 0.1rem;
+    margin-left: 5rem;
+}
+
+nav ul {
+    
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul.show{
+    display: block;
+}
+
+nav ul.hide{
+    display: none;
+}
+
+nav ul li {
+    background-color: #17852f;
+    flex-basis: 100%;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+nav ul li.active a {
+    background-color: darkgreen;
+}
+
+nav ul li a:hover {
+    background-color: darkgreen; 
+}
+
+/*  Main  */
+main {margin-left: 1rem}
+
+main h2 {}
+main picture.hidesmall{
+    display:none;
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 90%; }
+main figure figcaption { font-weight: 700; }
+
+section.summary {
+    border-style: solid; 
+    border-width: medium;
+}
+section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
+
+/* Form Design */
+
+form fieldset {margin: 1rem 2%; border: 3px solid #1f69be; border-radius: 10px;}
+form legend {font-weight: 700; color: #000; margin-left: 2%;}
+
+form div {
+	display;align-content: flex-start;
+	margin-top: 1rem;
+}
+
+form span {
+	display: block;
+	color: #1a9835;
+	font-size: .75rem;
+}
+form input.submitBtn {
+	background-color: #1f69be;
+	border-radius: 10px;
+	border: none;
+	margin-left: 2%;
+	color: #fff;
+	padding: .6rem 2rem;
+	margin-bottom: 1rem;
+}
+
+article {
+    width: auto;
+    overflow: hidden;
+    border-style: solid;
+    margin-top: 1.0rem;
+}
+
+article p.town-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    float: left;
+    width: auto; /* fill the page in the small/phone view */
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+article p.town-article img{
+    float: right;
+    width: 35%;
+    margin-top: -1.0rem;
+    margin-bottom: 1.0rem;
+    
+}
+/*  Weather Gallery Grid  */
+div.weatherGallery {
+	padding: 0 2%;
+	display: grid;
+  	grid-template-columns: auto;
+}
+div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
+div.weatherGallery figure img {width: 100%;}
+div.weatherGallery figure figcaption {text-align: center; font-size: 1.0rem;}
+
+footer {
+    margin: 1rem;
+    background-color: #6699ff;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+
+/* Other Class Selectors */
+.clearfix:after, .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

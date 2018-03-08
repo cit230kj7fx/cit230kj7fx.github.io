@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>My Weather Channel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="Mike Odom">
+<meta name="description" content="CIT-230 Weather Site Home Page">
+    
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/main-9.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium-9.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large-9.css" rel="stylesheet">
+
+<script src="js/scripts.js" async></script>
+
+<!--  Code to get json data -->
+<script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        
+        request.onload = function() {
+            var cityInfo = request.response;
+            /* no header required
+            populateHeader(cityInfo);
+            */
+            showCitydata(cityInfo);
+        }
+        /* No header info
+        function populateHeader(jsonObj) {
+            var myH1 = document.createElement('h1');
+            myH1.textContent = jsonObj['squadName'];
+            header.appendChild(myH1);
+            var myPara = document.createElement('p');
+            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+            header.appendChild(myPara);
+        }
+        */
+        function showCitydata(jsonObj) {
+            var cities = jsonObj['towns'];
+            for (var i = 0; i < cities.length; i++) {
+            var myArticle = document.createElement('article');
+            var myH2 = document.createElement('h2');
+            var myH3 = document.createElement('h3');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
+            var myList = document.createElement('ul');
+
+            myH2.textContent = cities[i].name;
+            myH3.textContent = 'Motto: ' + cities[i].motto;
+            myPara1.textContent = 'Year Founded: ' + cities[i].yearFounded;
+            myPara2.textContent = 'Population: ' + cities[i].currentPopulation;
+            myPara3.textContent = 'Average Rainfall: ' + cities[i].averageRainfall;
+            myPara4.textContent = 'Upcoming Events: ';
+
+            var cityEvents = cities[i].events;
+            for (var j = 0; j < cityEvents.length; j++) {
+              var listItem = document.createElement('li');
+              listItem.textContent = cityEvents[j];
+              myList.appendChild(listItem);
+            }
+
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myH3);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+            myArticle.appendChild(myList);
+
+            section.appendChild(myArticle);
+          }
+        }
+    
+</script>
+
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	
+	<header>
+    <picture>
+    <img src="images/weather_logo.jpg" alt="The site logo" >
+    </picture>
+     <div class="headings">
+        <h1>Perfect Weather</h1>
+        <h2>Mostly Misleading - Sometimes Correct</h2>
+    </div>
+    </header>
+    
+    
+    <!-- page navigation links here -->
+    <nav >
+    <button onclick="myFunction()">&#9776;</button>
+    <ul class="hide" id="primaryNavigation">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin-9.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+		
+    </nav>
+    
+    
+    <!-- page content here -->
+    <main>
+    <h1>Home</h1>
+    <figure class="decorativePhoto">
+    	<img alt="construction" src="images/underconstructionsmall.jpg">
+		<figcaption>This Page is in the construction phase</figcaption>
+	</figure>
+    <section>
+        
+    </section>
+        <!-- Not Needed 
+        <h2 id=city1>City 1</h2>
+
+        <h2 id=city2>City 2</h2>
+        
+        <h2 id=city3>City 3</h2>
+        -->
+    </main><!-- end content -->
+    
+    
+    <footer>
+		<p>&copy; Mike Odom &bull; Weather Site &bull; <span id="currentdate"></span></p>
+    </footer>
+    
+
+</body>
+</html>

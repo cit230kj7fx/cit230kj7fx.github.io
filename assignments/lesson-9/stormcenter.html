@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-us">
+    
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Storm Center</title>
+  <meta name="author" content="Mike Odom">
+  <meta name="description" content="Storm Center Input Page">
+    
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="css/main-8.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="css/medium-8.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="css/large-8.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    
+  <script src="js/scripts.js" ></script>
+</head>
+    
+<body>
+
+  <header>
+    <picture>
+    <img src="images/weather_logo.jpg" alt="The site logo" >
+    </picture>
+    <div class="headings">
+        <h1>Perfect Weather</h1>
+        <h2>Mostly Misleading - Sometimes Correct</h2>
+    </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+      <button onclick="toggleNavMenu()">&#9776;</button>
+     
+    <ul class="hide" id="nav-container">
+    	<li><a href="/index.html">Home</a></li>
+    	<li><a href="/assignments/lesson-8/franklin-8.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li class="active"><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="/assignments/lesson-8/gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <br>
+     <h1>Storm Center</h1>
+		<picture class="hideSmall"><img src="images/stormcenter.jpg" alt="storm"></picture>
+      
+<form action="thanks.html" method="post" enctype="multipart/form-data" name="attend">
+
+<fieldset>
+<legend>Personal Info</legend>
+
+	<div><label><span>First and Last Name:</span><input name="name" type="text" placeholder="full name" pattern="[A-z\s]{5,}" required autofocus title="Please provide your first and last name (minimum of 5 characters)"></label></div>
+
+	<div><label><span>Email:</span><input name="email" type="email" placeholder="zenuser@gmail.com" required title="Please provide a valid email address"></label></div>
+
+	<div><label><span>Phone:</span><input name="phone" type="tel"  required title="Please provide a valid phone number"></label></div>
+
+	<div><label><span>Zip Code:</span><input name="zip" type="number" required title="Please provide your Zip Code"></label></div>
+</fieldset>
+
+
+<fieldset>
+<legend>Storm Info</legend>
+	<div><label><span>Date:</span><input name="date" type="date" ></label></div>
+<div><label>
+  <span>Storm Type:</span>
+  <input type="text" name="stormtype" list="storms">
+  <datalist id="storms">
+   <option value="Flash Flood"> </option>
+   <option value="Hail"> </option>
+   <option value="Hurricane"> </option>
+   <option value="Thunderstorm"> </option>
+   <option value="Tornado"> </option>
+  </datalist>
+	</label></div>
+	<div><label><span>Storm Severity:</span><input type="range" name="points" min="0" max="10"></label></div>
+<div><label><span>Storm Region:</span>
+	<select name="stormRegion">
+	<option selected disabled>Select Region</option>
+	<option value="Franklin">Franklin</option>
+	<option value="Greenville">Greenville</option>
+	<option value="Springfield">Springfield</option>
+	</select></label></div>
+ 
+
+<div><span>Danger Level:</span>
+	<label><input type="radio" name="danger" value="Yes"> Yes<br></label>
+	<label><input type="radio" name="danger" value="Maybe"> Maybe<br></label>
+	<label><input type="radio" name="danger" value="No"> No</label></div>
+
+	<div><label><span>Additional Information:</span><textarea></textarea></label></div>
+
+</fieldset>
+
+
+<input type="submit" value="Sign me up!" class="submitBtn">
+
+
+</form>
+  </main>
+    
+  <footer>
+    <aside>
+      <p>Perfect Weather LLC</p>
+      <p>Puxatawny PA 15767</p>
+      <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="displayDate">Current Date Placeholder</span></p>
+  </footer>
+  
+  <!--
+  <script src="js/hamburger.js"></script>
+  
+  <script src="js/dateScript.js" async></script>
+  -->
+
+</body>
+
+</html>
