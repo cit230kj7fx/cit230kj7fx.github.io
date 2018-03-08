@@ -23,7 +23,7 @@
 <!-- enhance-desktop -->
 <link href="css/large-9.css" rel="stylesheet">
 
-<script src="js/scripts.js" async></script>
+<script src="js/scripts.js" defer></script>
 
 <!--  Code to get json data -->
     
@@ -75,8 +75,7 @@
         <section>
         
         </section>
-        <script>
-    var header = document.querySelector('header');
+    <script>
     var section = document.querySelector('section');
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
     var request = new XMLHttpRequest();
@@ -86,21 +85,9 @@
         
         request.onload = function() {
             var cityInfo = request.response;
-            /* no header required
-            populateHeader(cityInfo);
-            */
             showCitydata(cityInfo);
         }
-        /* No header info
-        function populateHeader(jsonObj) {
-            var myH1 = document.createElement('h1');
-            myH1.textContent = jsonObj['squadName'];
-            header.appendChild(myH1);
-            var myPara = document.createElement('p');
-            myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
-            header.appendChild(myPara);
-        }
-        */
+        
         function showCitydata(jsonObj) {
             var cities = jsonObj['towns'];
             for (var i = 0; i < cities.length; i++) {
@@ -139,18 +126,17 @@
           }
         }
     
-</script>
-        <!-- Not Needed 
-        <h2 id=city1>City 1</h2>
-
-        <h2 id=city2>City 2</h2>
+    </script>
         
-        <h2 id=city3>City 3</h2>
-        -->
     </main><!-- end content -->
     
     
     <footer>
+        <aside>
+      <p>Perfect Weather LLC</p>
+      <p>Puxatawny PA 15767</p>
+      <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+    </aside>
 		<p>&copy; Mike Odom &bull; Weather Site &bull; <span id="currentdate"></span></p>
     </footer>
     
