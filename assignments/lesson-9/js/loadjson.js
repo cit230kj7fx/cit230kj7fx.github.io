@@ -15,6 +15,7 @@ var request = new XMLHttpRequest();
     function showCitydata(jsonObj) {
         var cities = jsonObj['towns'];
         for (var i = 0; i < cities.length; i++) {
+            
             var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
             var myH3 = document.createElement('h3');
@@ -47,6 +48,6 @@ var request = new XMLHttpRequest();
             myArticle.appendChild(myList);
 
             section.appendChild(myArticle);
-        }
-}
+        }        
+    }
     
