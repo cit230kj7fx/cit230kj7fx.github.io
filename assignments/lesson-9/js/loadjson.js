@@ -16,6 +16,9 @@ var request = new XMLHttpRequest();
         var cities = jsonObj['towns'];
         for (var i = 0; i < cities.length; i++) {
             
+            if (i === 2) {
+                continue;
+            }
             var myArticle = document.createElement('article');
             var myH2 = document.createElement('h2');
             var myH3 = document.createElement('h3');
