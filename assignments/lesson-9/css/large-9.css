@@ -11,5 +11,9 @@
 	div.weatherGallery figure:hover {
 		box-shadow: 5px 10px 15px darkblue;
 	}
-    
+/* Home Page City Descriptions */
+    section article {
+    width: 33%;
+    float: left;
+}
 }
