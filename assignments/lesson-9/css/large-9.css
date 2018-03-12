@@ -11,9 +11,15 @@
 	div.weatherGallery figure:hover {
 		box-shadow: 5px 10px 15px darkblue;
 	}
-/* Home Page City Descriptions */
+/* Home Page City Descriptions 
     section article {
     width: 33%;
     float: left;
 }
+    */
+    /* Define the grid for the home page city data */
+    section.cityfacts {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2%;
+    }
 }

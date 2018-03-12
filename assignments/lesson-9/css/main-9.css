@@ -175,6 +175,14 @@ div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
 div.weatherGallery figure img {width: 100%;}
 div.weatherGallery figure figcaption {text-align: center; font-size: 1.0rem;}
 
+/* Define the grid for the home page city data */
+
+section.cityfacts {
+	padding: 0 2%;
+	display: grid;
+  	grid-template-columns: auto;
+}
+
 footer {
     margin: 1rem;
     background-color: #6699ff;

@@ -37,4 +37,9 @@
   		grid-template-columns: 1fr 1fr;
 		grid-gap:2%;
 	}
+/* Define the grid for the home page city data */
+    section.cityfacts {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
 }
