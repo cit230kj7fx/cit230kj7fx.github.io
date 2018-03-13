@@ -115,7 +115,7 @@ main figure figcaption { font-weight: 700; }
 
 section.summary {
     border-style: solid; 
-    border-width: medium;
+    border-width: thin;
 }
 section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
 
@@ -181,6 +181,11 @@ section.cityfacts {
 	padding: 0 2%;
 	display: grid;
   	grid-template-columns: auto;
+}
+section.cityfacts ul {
+    text-decoration: none;
+    text-align: left;
+    font-weight: 700;
 }
 
 footer {
