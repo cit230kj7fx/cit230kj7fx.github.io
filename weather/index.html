@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>My Weather Channel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="Mike Odom">
+<meta name="description" content="CIT-230 Weather Site Home Page">
+    
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/main-9.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium-9.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large-9.css" rel="stylesheet">
+
+<script src="js/scripts.js" defer></script>
+
+<!--  Code to get json data -->
+    
+  
+
+
+<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+	
+	<header>
+    <picture>
+    <img src="images/weather_logo.jpg" alt="The site logo" >
+    </picture>
+     <div class="headings">
+        <h1>Perfect Weather</h1>
+        <h2>Mostly Misleading - Sometimes Correct</h2>
+    </div>
+    </header>
+    
+     
+    
+    
+    <!-- page navigation links here -->
+    <nav >
+    <button onclick="myFunction()">&#9776;</button>
+    <ul class="hide" id="nav-container">
+    	<li class="active"><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+		
+    </nav>
+    
+    
+    <!-- page content here -->
+    <main>
+    <h1>Home</h1>
+    <figure class="constructionphoto">
+    	<img alt="construction" src="images/underconstructionsmall.jpg">
+		<figcaption>This Page is in the construction phase</figcaption>
+	</figure>
+    
+        <section class="cityfacts">
+        
+        </section>
+        
+        <script src="js/loadjson.js" defer></script>
+        <h2>End of Descriptions</h2>
+    </main><!-- end content -->
+    
+    
+    <footer>
+        <aside>
+      <p>Perfect Weather LLC</p>
+      <p>Puxatawny PA 15767</p>
+      <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+    </aside>
+		<p>&copy; Mike Odom &bull; Weather Site &bull; <span id="currentdate"></span></p>
+    </footer>
+    
+
+</body>
+</html>
