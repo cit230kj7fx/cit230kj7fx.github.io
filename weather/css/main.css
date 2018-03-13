@@ -183,11 +183,14 @@ section.cityfacts {
   	grid-template-columns: auto;
 }
 section.cityfacts ul {
-    text-decoration: none;
+    list-style-type: none;
     text-align: left;
     font-weight: 700;
 }
-
+button.return {
+    background-color: lightblue;
+    border-radius: 12px;
+}
 footer {
     margin: 1rem;
     background-color: #6699ff;
