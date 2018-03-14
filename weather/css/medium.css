@@ -22,14 +22,16 @@
 	}
     
     main picture.hidesmall{
-        display: flex;
+        display: block;
     }
     div.current p{font-weight: 600;}  
   
   section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
   
-    /*
-  article p.town-article img { width: 62.666%; float:right; }   responsive images */
+    
+  article p.town-article img { /*responsive images */
+      width: 62.666%; 
+      float:right; } 
 
 
 /*  Weather Gallery Grid */
