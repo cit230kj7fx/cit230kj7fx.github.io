@@ -184,9 +184,9 @@ section.cityfacts ul {
     text-align: left;
     font-weight: 700;
 }
-button.return {
-    background-color: lightblue;
-    border-radius: 12px;
+p#return-link a {
+    font-size: 1.3em;
+    font-weight: 600;
 }
 footer {
     margin: 1rem;
