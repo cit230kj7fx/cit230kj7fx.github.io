@@ -1,11 +1,11 @@
 // ---------- WAYFINDING TO HIGHLIGHT ACTIVE MENU ITEM -----------------
-//remember to add an ID of "mainmenu" to the nav ul
+//remember to add an ID of "nav-container" to the nav ul
 var urlString = document.location.href;
 var urlArray = urlString.split('/');
 var pageHREF = urlArray[urlArray.length - 1];
 
 if (pageHREF !== "") {
-	var menu = document.querySelectorAll('ul#mainmenu li a');
+	var menu = document.querySelectorAll('ul#nav-container li a');
 	var i;
 	//loop through all the menu items in the navigation
 	for (i = 0; i < menu.length; i++) {
