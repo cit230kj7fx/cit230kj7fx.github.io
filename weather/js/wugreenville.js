@@ -10,6 +10,8 @@ weatherObject.onload = function() {
         
     console.log(weatherInfo);
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
+    
+    document.getElementById('datetime').innerHTML = weatherInfo.current_observation.observation_time;
 
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
     
