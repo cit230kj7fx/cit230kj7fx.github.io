@@ -19,7 +19,7 @@
 </head>
     
 <body>
-
+   <script src="js/wufranklin.js" defer></script>
   <header>
     <picture>
     <img src="images/weather_logo.jpg" alt="The site logo" >
@@ -29,6 +29,7 @@
         <h2>Mostly Misleading - Sometimes Correct</h2>
     </div>
   </header>
+    
 
   <!-- site navigation use placeholder references -->
   <nav>
@@ -51,20 +52,19 @@
            srcset="images/franklin_400.jpg 600w, images/franklin_800.jpg 800w, images/franklin_1200.jpg 1200w">
     </figure>
     <section class="summary">
-      <h2>Weather Summary</h2>    
-      <div class="highlow">
+      <h2>Current Weather Summary</h2>
+      <h2><span id="place">City, State</span></h2>
+        <!--
+        <div class="highlow">
         <p>High: 90&deg;</p>  
         <p>Low: 66&deg;</p>  
       </div>
+        -->
       <div class="current">
-        <p>Sunny</p>
-        <picture>
-            <img src="images/sun.jpg" alt="sun" width="75" height="75">
-        </picture>
-      </div>   
-      <div class="conditions">
-        <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>  
+        <p>Currently: <span id="currentTemp"> 120</span>&deg;F</p>
+        <p>Precipitation: <span id="precip"> 0</span> inches</p>
+        <p>Wind Speed: <span id="windspeed"> 0</span> MPH</p> 
+        <img src="images/placeholder.jpg" alt="weather icon" id="weather_icon" >
       </div>           
     </section>
         
@@ -131,6 +131,7 @@
   
   <script src="js/dateScript.js" async></script>
   -->
+ 
 
 </body>
 
