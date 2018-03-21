@@ -17,7 +17,9 @@ weatherObject.onload = function() {
     
     document.getElementById('precip').innerHTML = weatherInfo.current_observation.precip_today_in;
     
-    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_mph;
+    document.getElementById('windspeed').innerHTML = weatherInfo.current_observation.wind_string;
+        
+    document.getElementById('windchill').innerHTML = weatherInfo.current_observation.windchill_string;
     
     //Allow for function to work in https mode
     var icon_path = weatherInfo.current_observation.icon_url;
