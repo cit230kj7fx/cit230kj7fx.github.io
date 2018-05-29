@@ -24,11 +24,11 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     max-width: auto;
 }
 
-
+/*
 header {
     border-bottom: 2px solid #bbb;
 }
-
+*/
 
 header, footer, footer a{
     
