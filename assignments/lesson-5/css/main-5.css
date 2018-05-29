@@ -17,8 +17,8 @@ body {
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: auto;
-    padding: 0, .25rem ;
-    max-width: auto;
+    padding: 0 .25rem ;
+    max-width: initial;
 }
 /*
 
