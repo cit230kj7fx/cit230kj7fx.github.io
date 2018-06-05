@@ -1,4 +1,4 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
+/* This main css file contains the default rules and is geared toward the small/phone view Includes most rules which are not viewport dependent*/
 
 * {
     margin: 0;
