@@ -46,11 +46,11 @@ footer a {
     color: black;
 }
 
-header img {
+/* header img {
     width: 200px;
     float align-content: center;
 }
-
+*/
 header .subheading {
     display: flex;
     flex-flow: column nowrap;
