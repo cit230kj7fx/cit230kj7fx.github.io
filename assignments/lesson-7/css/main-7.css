@@ -48,7 +48,7 @@ footer a {
 
 header img {
     width: 200px;
-    float: center;
+    float align-content: center;
 }
 
 header .subheading {
