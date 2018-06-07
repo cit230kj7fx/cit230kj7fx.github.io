@@ -12,11 +12,12 @@
 body {
     margin: 3%;
     padding: 0;
-    max-width: 94%;
+    max-width: 90%;
     max-height: 100%;
     text-align: center;
     font-size: 16px;
     line-height: 32px;
+    
     /* Declare the base font-family - from google font api or other */
     font-family: 'Lato', sans-serif;
     font-weight: 300;
@@ -29,28 +30,16 @@ main,
 footer {
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    margin: 0 0.5rem 0 0.5rem;
+    margin: 0 ;
     padding: 0rem;
 }
 
 header,
 footer,
 footer a {
-    /*
-    margin: 0.2rem;
-   
-    text-align: center;
-    
-    background-color: #6699ff;
-    */
     color: black;
 }
 
-/* header img {
-    width: 200px;
-    float align-content: center;
-}
-*/
 header .subheading {
     display: flex;
     flex-flow: column nowrap;
@@ -58,33 +47,6 @@ header .subheading {
 }
 
 
-/*
-header h2 {
-    font-size: 1.5rem;
-    
-}
-
-header h1 {
-    background-color: #6699ff;
-    font-size: 2.0rem;
-    text-align: center;
-    color: black;
-}
-
-header .subheading {
-    background-color: #6699ff;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 500;
-}
-*/
-
-
-/*
-nav { 
-    background-color: #1a9835;
-    }
-*/
 
 nav button {
     display: block;
@@ -118,7 +80,7 @@ nav ul li a {
     display: block;
     color: #eee;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
     padding: 0.5rem 0;
     text-align: center;
@@ -137,12 +99,13 @@ nav ul li a:hover {
 /*  Main  */
 
 main {
+    display: block;
     margin-left: 1rem
 }
 
 main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
+    margin: 0 ;
+    
 }
 
 main figure img {
