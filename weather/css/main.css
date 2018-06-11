@@ -197,8 +197,8 @@ footer>p {} /* This structure refers to p elements that are direct children of t
 
 
 /* Other Class Selectors */
-.clearfix:after, .row:after {
-    content: "";
-    display: table;
-    clear: both;
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
