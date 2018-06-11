@@ -10,23 +10,9 @@ body {
     font-family: Verdana, sans-serif;
     color: #000000;
 }
-
-h1 {
-    font-size: 2.0rem;
-    color: #302b27;
-    padding-bottom: .5rem;
-}
-
-h2 {
-    font-size: 1.4rem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
-}
-
 header, nav, main, footer {
-    margin: 1.25rem auto;
-    padding: .5rem;
-    max-width: 30rem;
+    margin:1rem auto;
+    max-width: 25rem;
 }
 
 header, footer, footer a {
@@ -36,20 +22,35 @@ header, footer, footer a {
     color: whitesmoke;
 }
 
+header .hdr-container{
+    display: flex;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #302b27;
+    padding-bottom: .5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    }
+
 header img {
     width: 35%;
     height: auto;
     float: center;
 }
 
-p.product {
-    margin: 0 auto; 
-    border: 3px solid #000; 
-    padding: 5px; 
-    background-color: #eee; 
-    line-height: 1.5em;
+nav nav-container{
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
 }
 
 footer {
-    font-size: .75rem;
+    font-size: 1.0rem;
 }
