@@ -77,32 +77,34 @@
    <option value="Thunderstorm"> </option>
    <option value="Tornado"> </option>
   </datalist>
-	</label></div>
-	<div><label><span>Storm Severity:</span><input type="range" name="points" min="0" max="10"></label></div>
+	</label>
+</div>
+<div><label><span>Storm Severity:</span><input type="range"   name="points" min="0" max="10"></label>
+</div>
 <div><label><span>Storm Region:</span>
 	<select name="stormRegion">
 	<option selected disabled>Select Region</option>
 	<option value="Franklin">Franklin</option>
 	<option value="Greenville">Greenville</option>
 	<option value="Springfield">Springfield</option>
-	</select></label></div>
+	</select></label>
+</div>
  
-
-<div><span>Danger Level:</span>
+<div class=dangerLevel><span>Danger Level:</span>
 	<label><input type="radio" name="danger" value="Yes"> Yes<br></label>
 	<label><input type="radio" name="danger" value="Maybe"> Maybe<br></label>
-	<label><input type="radio" name="danger" value="No"> No</label></div>
+    <label><input type="radio" name="danger" value="No"> No</label>
+</div>
 
 	<div><label><span>Additional Information:</span><textarea></textarea></label></div>
 
 </fieldset>
 
 
-<input type="submit" value="Sign me up!" class="submitBtn">
-
+<input type="submit" value="Report The Storm" class="submitBtn">
 
 </form>
-  </main>
+</main>
     
   <footer>
     <aside>
@@ -113,12 +115,6 @@
     <p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="displayDate">Current Date Placeholder</span></p>
   </footer>
   
-  <!--
-  <script src="js/hamburger.js"></script>
-  
-  <script src="js/dateScript.js" async></script>
-  -->
-
 </body>
 
 </html>
