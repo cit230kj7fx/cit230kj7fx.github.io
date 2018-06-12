@@ -1,4 +1,4 @@
-/* This main css file contains the default rules and is geared toward the small/phone view Includes most rules which are not viewport dependent*/
+/* This main css file contains the default rules and is geared toward the small/phone view */
 
 * {
     margin: 0;
@@ -45,8 +45,6 @@ header .subheading {
     flex-flow: column nowrap;
     justify-content: center;
 }
-
-
 
 nav button {
     display: block;
@@ -146,8 +144,6 @@ article p.town-article img {
     margin-top: -1.0rem;
     margin-bottom: 1.0rem;
 }
-
-
 /*  Weather Gallery Grid  */
 
 div.weatherGallery {
@@ -175,14 +171,11 @@ footer {
     background-color: #6699ff;
 }
 
+/* This structure refers to p elements that are direct children of the footer element */
 footer p {
     font-style: italic;
     font-weight: 400;
 }
-
-
-/* This structure refers to p elements that are direct children of the footer element */
-
 
 /* Other Class Selectors */
 

@@ -1,12 +1,18 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model 
+* { 
+    margin: 0; 
+    box-sizing: border-box;
+}  
+
+
+/* This wildcard applies to all elements ensuring a box layout model 
 */
 
 body {
     margin: 3%;
     padding: 0;
-    max-width: 94%;
+    max-width: 90%;
     max-height: 100%;
     text-align: center;
     font-size: 16px;
@@ -16,54 +22,38 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: #333;
-  
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    margin: 1rem;
-    padding: 0 0.25rem;
-    max-width: none;
-    
+header, 
+nav, 
+main, 
+footer { 
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    margin: 0;
+    padding: 0rem;
 }
 
-header {
-    border-bottom: 2px solid #bbb;
-}
-
-
-header img {
-    width: 200px;
-    align-content: center;
-}
-
-header .headings{
-    background-color: cornflowerblue;
-    text-align: center;
+header,
+footer,
+footer a {
     color: black;
 }
-header h1 {
-    font-size: 2.0rem;
-    }
 
-header h2 {
-    font-size: 1.5rem;
-    }
+header .subheading {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
-/*
-nav { 
-    background-color: #1a9835;
-    }
-*/
 nav button{
     display: block;
     position: absolute;
     margin-top: 0.1rem;
-    margin-left: 5rem;
+    margin-left: .5rem;
 }
 
 nav ul {
-    
     padding: 0;
     margin: 0;
     display: flex;
@@ -71,7 +61,7 @@ nav ul {
 }
 
 nav ul.show{
-    display: block;
+    display: flex;
 }
 
 nav ul.hide{
@@ -85,9 +75,10 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
     color: #eee;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
     padding: 0.5rem 0;
     text-align: center;
@@ -103,20 +94,28 @@ nav ul li a:hover {
 }
 
 /*  Main  */
-main {margin-left: 1rem}
 
-main h2 {}
-main picture.hidesmall{
-    display:none;
+main {
+    display: block;
+    margin-left: 1rem
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 90%; }
 
+main figure {
+    margin: 0 ;
+    
+}
+
+main figure img {
+    width: 100%;
+}
 section.summary {
     border-style: solid;
     border-width: medium;
 }
-section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
+section.forecast { 
+    display: none; }  
+
+/* show the 10-day forecast with the medium view and up */
 
 /* Form Design */
 
@@ -150,9 +149,11 @@ article {
     margin-top: 1.0rem;
 }
 
-article p.town-article {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article {  
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     float: left;
-    width: auto; /* fill the page in the small/phone view */
+    width: auto; 
+    /* fill the page in the small/phone view */
     margin-left: 0.25rem;
     margin-right: 0.25rem;
 }
@@ -164,25 +165,40 @@ article p.town-article img{
     
 }
 /*  Weather Gallery Grid  */
+
 div.weatherGallery {
 	padding: 0 2%;
 	display: grid;
   	grid-template-columns: auto;
 }
-div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
-div.weatherGallery figure img {width: 100%;}
-div.weatherGallery figure figcaption {text-align: center; font-size: 1.0rem;}
+div.weatherGallery figure {
+    margin: 2rem 0; 
+    border: 1px solid #aaa;
+}
+div.weatherGallery figure img {
+    width: 100%;
+}
+
+div.weatherGallery figure figcaption {
+    text-align: center; 
+    font-size: 1.0rem;
+}
 
 footer {
-    margin: 1rem;
+    margin: 1rem 0 0 1rem;
     background-color: #6699ff;
 }
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
 
+/* This structure refers to p elements that are direct children of the footer element */
+footer p {
+    font-style: italic;
+    font-weight: 400;
+}
 
 /* Other Class Selectors */
-.clearfix:after, .row:after {
+
+.clearfix:after, 
+.row:after {
     content: "";
     display: table;
     clear: both;
