@@ -92,7 +92,7 @@ nav ul li a:hover {
 /*  Main  */
 
 main {
-    display:block;
+    display: block;
     margin-left: 1rem;
 }
 
@@ -108,8 +108,9 @@ main figure {
 main figure img {
     width:  100%;
 }
-main figure img.constructionphoto {width: 60%;}
-main figure figcaption { font-weight: 700; }
+main figure img.constructionphoto {
+    }
+main figure figcaption { font-weight: 600; }
 
 section.summary {
     border-style: solid; 
