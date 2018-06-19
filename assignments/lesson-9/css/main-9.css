@@ -164,6 +164,13 @@ article p.town-article img{
     
 }
 /*  Weather Gallery Grid  */
+
+div.weatherGallery {
+	padding: 0 2%;
+	display: grid;
+  	grid-template-columns: auto;
+}
+
 div.weatherGallery figure {
     margin: 2rem 0; 
     border: 1px solid #aaa;
