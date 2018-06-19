@@ -21,17 +21,21 @@
 		border-bottom: none;
 	}
     
+    /*
     main picture.hidesmall{
         display: flex;
     }
+     */
     div.current p{font-weight: 600;}  
+   
+    /* show the 10-day forecast with the medium view and up */
+  section.forecast { 
+      display: flex; 
+      flex-flow: column nowrap;
+      align-items: center;
+    
+    }  
   
-  section.forecast { display: block; }  /* show the 10-day forecast with the medium view and up */
-  
-    /*
-  article p.town-article img { width: 62.666%; float:right; }   responsive images */
-
-
 /*  Weather Gallery Grid */
 	div.weatherGallery {
   		grid-template-columns: 1fr 1fr;

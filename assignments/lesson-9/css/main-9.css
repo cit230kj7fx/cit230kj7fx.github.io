@@ -1,12 +1,14 @@
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
-* { margin: 0; box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model 
-*/
+* { 
+    margin: 0; 
+    box-sizing: border-box;
+}  
 
 body {
     margin: 3%;
     padding: 0;
-    max-width: 94%;
+    max-width: 90%;
     max-height: 100%;
     text-align: center;
     font-size: 16px;
@@ -19,42 +21,27 @@ body {
   
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, 
+nav, 
+main, 
+footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-    margin: 1rem;
-    padding: 0 0.25rem;
-    max-width: none;
-    
+    margin: 0;
+    padding: 0rem;
 }
 
-header {
-    border-bottom: 2px solid #bbb;
-}
-
-
-header img {
-    width: 200px;
-    align-content: center;
-}
-
-header .headings{
-    background-color: cornflowerblue;
-    text-align: center;
+header,
+footer,
+footer a {
     color: black;
 }
-header h1 {
-    font-size: 2.0rem;
-    }
 
-header h2 {
-    font-size: 1.5rem;
-    }
+header .subheading {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
 
-/*
-nav { 
-    background-color: #1a9835;
-    }
-*/
 nav button{
     display: block;
     position: absolute;
@@ -63,7 +50,6 @@ nav button{
 }
 
 nav ul {
-    
     padding: 0;
     margin: 0;
     display: flex;
@@ -71,7 +57,7 @@ nav ul {
 }
 
 nav ul.show{
-    display: block;
+    display: flex;
 }
 
 nav ul.hide{
@@ -85,9 +71,10 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
     color: #eee;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .9rem;
     font-weight: 400;
     padding: 0.5rem 0;
     text-align: center;
@@ -103,13 +90,24 @@ nav ul li a:hover {
 }
 
 /*  Main  */
-main {margin-left: 1rem}
 
-main h2 {}
+main {
+    display:block;
+    margin-left: 1rem;
+}
+
+/*
 main picture.hidesmall{
     display:none;
 }
-main figure { margin: 0 0 .2rem 2%; width:96%; }
+*/
+
+main figure {
+    margin: 0;
+} 
+main figure img {
+    width:  100%;
+}
 main figure img.constructionphoto {width: 60%;}
 main figure figcaption { font-weight: 700; }
 
@@ -122,19 +120,19 @@ section.forecast { display: none; }  /* show the 10-day forecast with the medium
 /* Form Design */
 
 form fieldset {margin: 1rem 2%; border: 3px solid #1f69be; border-radius: 10px;}
-form legend {font-weight: 700; color: #000; margin-left: 2%;}
+form legend {font-weight: 600; color: #000; margin-left: 2%;}
 
-form div {
-	display: flex;
-    align-content: flex-start;
-	margin-top: 1rem;
+form fieldset {
+	display: flex; align-items: center;
+	margin-top: .05rem;
 }
 
 form span {
-	display: block;
+	display: flex;
 	color: #1a9835;
-	font-size: .75rem;
+	font-size: 0.75rem;
 }
+
 form input.submitBtn {
 	background-color: #1f69be;
 	border-radius: 10px;
@@ -166,14 +164,18 @@ article p.town-article img{
     
 }
 /*  Weather Gallery Grid  */
-div.weatherGallery {
-	padding: 0 2%;
-	display: grid;
-  	grid-template-columns: auto;
+div.weatherGallery figure {
+    margin: 2rem 0; 
+    border: 1px solid #aaa;
 }
-div.weatherGallery figure {margin: 2rem 0; border: 1px solid #aaa;}
-div.weatherGallery figure img {width: 100%;}
-div.weatherGallery figure figcaption {text-align: center; font-size: 1.0rem;}
+div.weatherGallery figure img {
+    width: 100%;
+}
+
+div.weatherGallery figure figcaption {
+    text-align: center; 
+    font-size: 1.0rem;
+}
 
 /* Define the grid for the home page city data */
 
@@ -182,13 +184,16 @@ section.cityfacts {
 	display: grid;
   	grid-template-columns: auto;
 }
-
 footer {
-    margin: 1rem;
+    margin: 1rem 0 0 1rem;
     background-color: #6699ff;
 }
-footer aside {}
-footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* This structure refers to p elements that are direct children of the footer element */
+footer p {
+    font-style: italic;
+    font-weight: 400;
+}
 
 
 /* Other Class Selectors */

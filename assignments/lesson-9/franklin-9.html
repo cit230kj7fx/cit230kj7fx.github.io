@@ -15,16 +15,15 @@
   <link href="css/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="css/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
     
-  <script src="js/scripts.js" defer></script>
 </head>
     
 <body>
 
   <header>
-    <picture>
-    <img src="images/weather_logo.jpg" alt="The site logo" >
-    </picture>
-     <div class="headings">
+    <div class="subheading">
+        <picture>
+            <img src="images/weather_logo.jpg" alt="The site logo" >
+        </picture>
         <h1>Perfect Weather</h1>
         <h2>Mostly Misleading - Sometimes Correct</h2>
     </div>
@@ -51,6 +50,7 @@
       <img src="images/franklin_400.jpg" alt="mountain sun" sizes="100vw"
            srcset="images/franklin_400.jpg 600w, images/franklin_800.jpg 800w, images/franklin_1200.jpg 1200w">
     </figure>
+      
     <section class="summary">
       <h2>Weather Summary</h2>    
       <div class="highlow">
@@ -65,7 +65,8 @@
       </div>   
       <div class="conditions">
         <p>Precipitation: 0%</p>  
-        <p>Wind Speed: 5 mph SW</p>  
+        <p>Wind Speed: 5 mph SW</p>
+        <p>Wind Chill: <span id=windChill>Wind Chill</span></p>
       </div>           
     </section>
         
@@ -124,15 +125,10 @@
       <p>Puxatawny PA 15767</p>
       <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
     </aside>
-    <p class="footer-bar">&copy;2017 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
   </footer>
-  
-  <!--
-  <script src="js/hamburger.js"></script>
-  
-  <script src="js/dateScript.js" async></script>
-  -->
-
+    
+  <script src="js/scripts.js" ></script>
 </body>
 
 </html>
