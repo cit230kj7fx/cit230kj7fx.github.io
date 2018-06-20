@@ -189,8 +189,19 @@ div.weatherGallery figure figcaption {
 
 section.cityfacts {
 	padding: 0 2%;
-	display: grid;
+    display: grid;
+    list-style-type: none;
   	grid-template-columns: auto;
+}
+
+section.cityfacts ul {
+    list-style-type: none;
+    text-align: left;
+    font-weight: 700;
+}
+p#return-link a {
+    font-size: 1.3em;
+    font-weight: 600;
 }
 footer {
     margin: 1rem 0 0 1rem;
