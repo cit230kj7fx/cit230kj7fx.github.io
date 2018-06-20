@@ -105,10 +105,11 @@ main picture.hidesmall{
 main figure {
     margin: 0;
 } 
-main figure img {
-    width:  25%;
+main figure.photofullwidth {
+    width:  100%;
 }
-main figure img.constructionphoto {
+main figure.constructionphoto {
+    width: 100%;
     }
 main figure figcaption { font-weight: 600; }
 
