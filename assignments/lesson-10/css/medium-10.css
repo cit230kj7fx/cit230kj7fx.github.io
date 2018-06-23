@@ -1,0 +1,49 @@
+@media screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    nav ul.hide{
+        display: flex;
+    }
+    
+    
+  nav ul {
+      
+		margin-left: 2%;
+        border-left: 1px solid rgba(0,0,0,0.3);
+        flex-wrap: nowrap;
+	}
+    
+	nav ul li {float: left;	width: auto;}
+	nav ul li a {
+		border-right: 1px solid rgba(0,0,0,0.3);
+		border-bottom: none;
+	}
+    
+    /*
+    main picture.hidesmall{
+        display: flex;
+    }
+     */
+    div.current p{font-weight: 600;}  
+   
+    /* show the 10-day forecast with the medium view and up */
+  section.forecast { 
+      display: flex; 
+      flex-flow: column nowrap;
+      align-items: center;
+    
+    }  
+  
+/*  Weather Gallery Grid */
+	div.weatherGallery {
+  		grid-template-columns: 1fr 1fr;
+		grid-gap:2%;
+	}
+/* Define the grid for the home page city data */
+    section.cityfacts {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2%;
+    }
+}
