@@ -28,21 +28,6 @@ function toggleNavMenu() {
     }
 } // end of function
 
-
-
-// --------------- GENERATE DATE SCRIPT --------------------
-var theDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-var theMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-
-var d = new Date();
-var dayName = theDays[d.getDay()];
-var day = d.getDate();
-var monthName = theMonths[d.getMonth()];
-var year = d.getFullYear();
-
-document.getElementById("currentdate").innerHTML = dayName + ", " + day + " " + monthName + " " + year;
-
 // --------------- WINDCHILL SCRIPT --------------------
 var high = 90;
 var low = 66;
@@ -55,3 +40,4 @@ var windChill = 35.74 + (0.6215 * avereageTemp) - (35.75 * Math.pow(windSpeed, 0
 windChill = Math.round(windChill) + "&deg;F";
 
 document.getElementById("windChill").innerHTML = windChill;
+
