@@ -7,6 +7,7 @@ function include() {
   for (let i = 0; i < allElements.length; i++) { // process all the elements looking for the custom attribute 'includefile'
     file = allElements[i].getAttribute("includefile");  
     if (file) { // if the attribute is found, process an AJAX XMLHttpRequest
+      console.log("includefile found")
       xhttp = new XMLHttpRequest();
       xhttp.onreadystatechange = function() {
         if (this.readyState == 4) {
@@ -16,7 +17,7 @@ function include() {
           include();
         }
       }
-        xhttp.open('GET', '../includes/' + file, true); // matching file names in includes folder
+        xhttp.open('GET', 'includes/' + file, true); // matching file names in includes folder
         xhttp.send();
         return;
     }

@@ -19,12 +19,14 @@
     <!-- medium/tablet views -->
     <link href="css/large-10.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
-
+    
+   
 </head>
 
 <body>
 
-    <header>
+    <header includefile="header.html">
+        <!--
         <div class="subheading">
             <picture>
                 <img src="images/weather_logo.jpg" alt="The site logo">
@@ -32,6 +34,7 @@
             <h1>Perfect Weather</h1>
             <h2>Mostly Misleading - Sometimes Correct</h2>
         </div>
+-->
     </header>
 
     <!-- site navigation use placeholder references -->
@@ -62,6 +65,7 @@
                 <p>Low: 66&deg;</p>
             </div>
             <div class="current">
+                <p>Current Temperature: <span id=current-temp>0 </span></p>
                 <p>Sunny</p>
                 <picture>
                     <img src="images/sun.jpg" alt="sun" width="75" height="75">
@@ -130,7 +134,8 @@
         </aside>
         <p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
-
+    <script src="js/include.js" ></script>
+    <script src="js/weatherapi.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 
