@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+
+<title>My Weather Channel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging whena phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="author" content="Mike Odom">
+<meta name="description" content="CIT-230 Weather Site Home Page">
+    
+<!-- *************** LOAD A GOOGLE FONT ****************** -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/main-10.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/medium-10.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/large-10.css" rel="stylesheet">
+
+<!--  Code to get json data -->
+    
+  
+</head>
+<body>
+	
+	<header includefile="header.html">
+   <!-- <picture>
+    <img src="images/weather_logo.jpg" alt="The site logo" >
+    </picture>
+     <div class="headings">
+        <h1>Perfect Weather</h1>
+        <h2>Mostly Misleading - Sometimes Correct</h2>
+    </div>
+   -->
+    </header>
+    
+     
+    
+    
+    <!-- page navigation links here -->
+    <nav >
+    <button onclick="myFunction()">&#9776;</button>
+    <ul class="hide" id="nav-container">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfiled.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>
+		
+    </nav>
+    
+    
+    <!-- page content here -->
+    <main>
+    <h1>Home</h1>
+    <figure class="constructionphoto">
+    	<img alt="construction" src="images/underconstructionsmall.jpg">
+		<figcaption>This page is in the construction phase</figcaption>
+	</figure>
+    
+        <section class="cityfacts">
+        
+        </section>
+        
+        
+        <p id="return-link"><a href="/index.html">Return To Portal</a></p>
+    </main><!-- end content -->
+    
+    <footer>
+        <aside>
+      <p>Perfect Weather LLC</p>
+      <p>Puxatawny PA 15767</p>
+      <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+    </aside>
+		<p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="js/scripts.js" ></script>
+    <script src="js/include.js" defer ></script>
+    <script src="js/loadjson.js" defer></script>
+    <script src="js/footerdate.js"></script>
+</body>
+</html>

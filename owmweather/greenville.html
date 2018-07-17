@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather</title>
+    <meta name="author" content="Mike Odom">
+    <meta name="description" content="First Franklin Page">
+
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="css/main-10.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="css/medium-10.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="css/large-10.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    
+   
+</head>
+
+<body>
+
+    <header includefile="header.html">
+        <!--
+        <div class="subheading">
+            <picture>
+                <img src="images/weather_logo.jpg" alt="The site logo">
+            </picture>
+            <h1>Perfect Weather</h1>
+            <h2>Mostly Misleading - Sometimes Correct</h2>
+        </div>
+-->
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav>
+        <button onclick="toggleNavMenu()">&#9776;</button>
+
+        <ul class="hide" id="nav-container">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="franklin-10.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <br>
+        <h1>The City of Franklin</h1>
+        <figure class="photofullwidth">
+            <img src="images/franklin_400.jpg" alt="mountain sun" sizes="100vw" srcset="images/franklin_400.jpg 600w, images/franklin_800.jpg 800w, images/franklin_1200.jpg 1200w">
+        </figure>
+
+        <section class="summary">
+            <h2>Weather Summary</h2>
+            <div class="highlow">
+                <p>High: <span id="hitemp">125</span>&deg;F</p>
+                <p>Low: <span id="lotemp">0</span>&deg;F</p>
+            </div>
+            <div class="current">
+                <p>Current Temperature: <span id=current-temp>0 </span>&deg;F</p>
+                <p>Sunny</p>
+                <picture>
+                    <img src="images/sun.jpg" alt="sun" width="75" height="75">
+                </picture>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: <span id="wind_spd">0;</span>MPH</p>
+                <p>Wind Chill: <span id=windChill>Wind Chill</span></p>
+            </div>
+        </section>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+
+            <p class="town-article"><img src="images/cycling_small.jpg" alt="peleton"> Annual Franklin cyclethon sets a record for both the high temperature and the number of entrants. Twelve teams of eight cyclists each are racing this year in the event. The race will wrap
+                up on Saturday. Cheer on your favorite team!
+                <br> Be alert for temporary road closures associated with the race. Remember to share the road with the spectators on bicycles.
+
+            </p>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <p>Perfect Weather LLC</p>
+            <p>Puxatawny PA 15767</p>
+            <p>Home of Puxatawney Phil - Weather Forecaster Extraordinaire</p>
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | Perfect Weather | <span id="currentdate">Current Date Placeholder</span></p>
+    </footer>
+    <script src="js/include.js" ></script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
