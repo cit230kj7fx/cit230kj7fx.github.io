@@ -116,6 +116,7 @@ main figure figcaption { font-weight: 600; }
 section.summary {
     border-style: solid; 
     border-width: medium;
+    font-weight: 600;
 }
 section.forecast { display: none; }  /* show the 10-day forecast with the medium view and up */
 
