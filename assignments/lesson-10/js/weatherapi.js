@@ -10,5 +10,7 @@ weatherRequest.onload = function() {
     console.log(weatherData);
         
     document.getElementById("current-temp").innerHTML = weatherData.list["0"].main.temp;
-    
+    document.getElementById("hitemp").innerHTML = weatherData.list["0"].main.temp_max;
+    document.getElementById("lotemp").innerHTML = weatherData.list["0"].main.temp_min;
+    document.getElementById("wind_spd").innerHTML = weatherData.list["0"].wind.speed;
 } //end of onload function
