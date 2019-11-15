@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>CSS Examples Page</title>
+    <meta charset="UTF-8">
+    <link href="css/cssexamples.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+    <h1>CSS Measurement Units</h1>
+    <h2>Text</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+    <h2>Ordered List</h2>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+        <li>Fifth Item</li>
+    </ol>
+
+    <h2>Example of srcset</h2>
+    <h3>Using img construct</h3>
+
+    <img class="testimage" src="images/cascade-falls.jpg" alt="Forest Cascade" sizes="100vw" srcset="images/cascade-falls.jpg 200w, images/iceland-mist.jpg 700w, images/mountain-scene.jpg 1000w">
+
+    <h3>Using figure construct</h3>
+
+    <figure class="testimage">
+        <img src="images/cascade-falls.jpg" alt="Forest Cascade" sizes="100vw" srcset="images/cascade-falls.jpg 200w, images/iceland-mist.jpg 700w, images/mountain-scene.jpg 1000w">
+    </figure>
+
+    <h3>using picture construct</h3>
+
+    <picture class="testimage">
+        <source srcset="images/cascade-falls.jpg" media="(max-width: 700px)">
+        <source srcset="images/iceland-mist.jpg" media="(min-width: 701px) and (max-width: 999px)">
+        <source srcset="images/mountain-scene.jpg" media="(min-width: 900px)">
+        <img src="images/turkeyclipart.jpg" alt="Turkey Clipart">
+    </picture>
+</body>
+
+</html>

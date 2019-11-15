@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset=utf-8>
+
+    <title>Weather OWM API demo</title>
+
+    <link rel="stylesheet" type="text/css" href="css/example.css" />
+    <link rel="stylesheet" type="text/css" href="css/weatherexample.css" />
+
+</head>
+
+<body>
+
+    <main>
+        <h1>Open Weather Map API Demo Page</h1>
+        <section class="observation">
+            <h2>Preston Weather Observations</h2>
+            <p>Current Conditions: <span id="curdesc"></span></p>
+            <p>Temperature: <span id="curtemp"></span>&deg;</p>
+            <p>Wind Speed: <span id="curwind"></span> MPH</p>
+            <p>Humidity: <span id="curhumidity"></span>&percnt; </p>
+            <p>Wind Chill: <span id="curwindchill"></span></p>
+        </section>
+
+        <!-- Weather 5 Day Forecast Processing -->
+        <section class="forecast">
+            <h2>Preston Five Day Forecast</h2>
+            <table id="5day">
+                <thead>
+                    <tr>
+                        <th><span id="day1"></span></th>
+                        <th><span id="day2"></span></th>
+                        <th><span id="day3"></span></th>
+                        <th><span id="day4"></span></th>
+                        <th><span id="day5"></span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="#" id="weather_icon1" alt="Weather Icon"><br> <span id="day1temp"></span>&deg;F</td>
+                        <td><img src="#" id="weather_icon2" alt="Weather Icon"><br> <span id="day2temp"></span>&deg;F</td>
+                        <td><img src="#" id="weather_icon3" alt="Weather Icon"><br> <span id="day3temp"></span>&deg;F</td>
+                        <td><img src="#" id="weather_icon4" alt="Weather Icon"><br> <span id="day4temp"></span>&deg;F</td>
+                        <td><img src="#" id="weather_icon5" alt="Weather Icon"><br> <span id="day5temp"></span>&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="scripts/weatherapi.js"></script>
+</body>
+
+</html>
