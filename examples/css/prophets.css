@@ -2,11 +2,89 @@
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
-* { margin: 0; box-sizing: border-box; } 
 
-body { 
-    font-size: 20px; 
-    line-height: 32px;
-    font-family: Verdana, sans-serif;
-    color: #000000;
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Ubuntu, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+  margin: 5px;
+  font-family: 'Bree Serif', serif;
+}
+
+/* header styles */
+
+h1 {
+  font-size: 2rem;
+  color: rgba(77,77,150,1);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+  letter-spacing: -1px;
+  margin-bottom: 5px;
+  color: rgba(77,77,150,1);
+  text-align: center;
+}
+
+header, main, footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+
+/* individual card styling */
+section {
+  border: 1px solid rgba(77,77,150,.95);
+  padding: .5rem;
+  background-color: rgba(77,77,150,.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+section p {
+  font-size: .8rem;
+}
+
+section img {
+  width: 150px;
+  height: auto;
+  box-shadow: 0 0 15px #333;
+  margin-top: 10px;
+}
+
+.cards {
+  background-color: #ddd;
+  box-shadow: 0 0 30px rgba(119, 119, 119, 1);
+  padding: 1rem;
+  display: grid;
+  grid-gap: .25rem;
+  grid-template-columns: 1fr;
+}
+
+
+/* medium viewports */
+@media (min-width: 32.5em) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* large viewports */
+@media (min-width: 60em) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
