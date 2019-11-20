@@ -1,0 +1,36 @@
+/* CIT 230 - Weather Example CSS */
+
+section.forecast {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    border-radius: .3em;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+section.forecast h2 {
+    font-size: 1.3em;
+    text-align: left;
+}
+
+.forecast th {
+    background-color: green;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.forecast td,
+.forecast th {
+    border: 3px solid #ddd;
+}
+
+.forecast td {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px 45px;
+}
+
+.forecast img {
+    width: 90px;
+}
