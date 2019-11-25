@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset=utf-8>
+
+    <title>Test Fetch Demo</title>
+    <!--
+    <link rel="stylesheet" type="text/css" href="css/example.css" />
+    <link rel="stylesheet" type="text/css" href="css/weatherexample.css" />
+    -->
+</head>
+
+<body>
+    <main>
+        <script>
+        const urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
+        fetch(urlAPI)
+        .then((Response) => response.json())
+        .then((jsObject) => {
+            console.log(jsObject);
+        })
+        </script>
+        <h1>Test Fetch Demo</h1>
+    </main>
+</body>
+</html>
