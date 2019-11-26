@@ -15,15 +15,26 @@
 
 <body>
     <main>
-        <script>
+        
+        <h1>Test Fetch Demo</h1>
+        <h2>Current Weather:</h2>
+        <p>Temp: <span id="curtemp">F</span></p>
+        <p>Currently: <span id="conditions"></span></p>
+        <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"</p>
+    </main>
+    <script>
         const urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
         fetch(urlAPI)
         .then((response) => response.json())
         .then((jsWeatherObject) => {
             console.log(jsWeatherObject);
+
+        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+        const desc = jsWeatherObject.weather[0].description;  // note how we reference the weather array
+        document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
+        document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
+        document.getElementById('icon').setAttribute('alt', desc);
         })
-        </script>
-        <h1>Test Fetch Demo</h1>
-    </main>
+    </script>
 </body>
 </html>
