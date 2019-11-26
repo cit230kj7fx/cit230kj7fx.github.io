@@ -18,7 +18,7 @@
         <script>
         const urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
         fetch(urlAPI)
-        .then((Response) => Response.json())
+        .then((response) => response.json())
         .then((jsObject) => {
             console.log(jsObject);
         })
