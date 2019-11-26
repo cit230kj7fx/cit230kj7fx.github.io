@@ -5,8 +5,8 @@ const urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units
 //weatherRequest.send();
 fetch(urlAPI)
     .then((Response) => Response.json())
-    .then((jsObject) => {
-        console.log(jsObject)
+    .then((jsWeatherObject) => {
+        console.log(jsWeatherObject)
     })
 //Retrieve Forcast Data for Preston
 let forecastRequest = new XMLHttpRequest();
