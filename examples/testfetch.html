@@ -28,9 +28,12 @@
         .then((response) => response.json())
         .then((jsWeatherObject) => {
             console.log(jsWeatherObject);
+        document.getElementById('curtemp').textContent = jsWeatherObject.main.temp;
+        document.getElementById('conditions').textContent = jsWeatherObject.weather[0].description; 
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png';  // note the concatenation
+        const imagesrc = 'https://openweathermap.org/img/w/' + jsWeatherObject.weather[0].icon + '.png';  // note the concatenation
         const desc = jsWeatherObject.weather[0].description;  // note how we reference the weather array
+        
         document.getElementById('imagesrc').textContent = imagesrc;  // informational specification only
         document.getElementById('icon').setAttribute('src', imagesrc);  // focus on the setAttribute() method
         document.getElementById('icon').setAttribute('alt', desc);
