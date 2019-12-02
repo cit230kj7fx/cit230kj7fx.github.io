@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : March 4 2016 11:47 AM
+    Author     : Mike Odom
+*/
+
+
+body {
+    padding-top: 20px;
+    background-color:#33ccff;
+    margin: 0px auto;
+    font-size:16px;
+    width:80%;
+
+}
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+    display:inline-block;
+    float: left;
+    margin-right: 5px;
+}
+
+/*Style for menu links*/
+li a {
+    display:block;
+    min-width:100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Verdana,  Arial, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+    background: #ffffcc;
+    color:#000000
+}
+
+
+@media only screen and (max-width:480px){
+
+    body {
+        width:320px;
+        background-color: #ccffcc;
+    }
+
+    /*styles for nav area*/
+    ul {
+        position: static;
+    }
+    /*Create vertical spacing*/
+    li {
+        margin-bottom: 1px;
+    }
+    /*Make all menu links full width*/
+    ul li, li a {
+        width: 100%;
+    }
+
+
+
+}
+

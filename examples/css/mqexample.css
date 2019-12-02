@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 29, 2015, 5:10:00 PM
+    Author     : Mike
+*/
+/* Global Styles - Styles to be applied to all devices */
+            img {
+                display: block;
+                margin: auto;
+                
+            }
+            
+            h1 {color:#33ffff}
+
+            body { 
+                margin: 0 auto;
+                padding:  5%;
+            } 
+
+            p {
+                font-size: 1em;
+                color:#ff9999;
+            }
+            
+            
+            /*mobile-handheld devices */  
+            @media only screen and (max-width:480px){
+        
+            body{ 
+                background-color:#ff0000;
+                width:320px;
+                }
+            img{
+                width:80%;
+               } 
+            h2 {color:#ffcccc }   
+
+                }  
+            /* tablet devices */
+            @media only screen and (min-width:481px)and (max-width:768px) { 
+            body { 
+                background-color:#cccccc;
+                 }
+            img{
+                width:50%;
+               } 
+               h2 {color:#000033 }  
+            }
+
+
+            /* desktop styles */
+            @media only screen and (min-width:769px) { 
+            body { 
+                background-color:#000000;
+                width:760px;
+            }
+
+
+            h2 {color:#ff9999; }
+            }
