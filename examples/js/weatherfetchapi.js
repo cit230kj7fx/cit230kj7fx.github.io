@@ -24,7 +24,7 @@ forecastRequest.onload = function() {
 
 weatherRequest.onload = function() {
         //let weatherData = JSON.parse(weatherRequest.responseText);
-        weatherData = JSON.parse(jsObject)
+        weatherData = JSON.parse(jsWeatherObject)
         //Populate Weather Summary with Preston Data
         weatherDisplay(weatherData);
     } //End of onload function
