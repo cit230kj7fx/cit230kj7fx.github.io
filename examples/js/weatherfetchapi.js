@@ -1,13 +1,33 @@
-//Retrieve Weather Data for Preston
-//let weatherRequest = new XMLHttpRequest();
-const urlAPI = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
-//weatherRequest.open('GET', urlAPI, true);
-//weatherRequest.send();
-fetch(urlAPI)
-    .then((Response) => Response.json())
-    .then((jsWeatherObject) => {
-        console.log(jsWeatherObject)
-    })
+/* JavaScript to display current conditions in the weather summary. */
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&APPID=ce06eddfee2de59e3e3a0fabeee489e1&units=imperial";
+fetch(apiURL)
+  .then((response) => response.json())
+  .then((weatherObject) => {
+    console.log(weatherObject);
+
+
+    document.getElementById('curdesc').textContent = weatherObject.weather[0].description.toUpperCase();
+    document.getElementById('high').textContent = Math.round(weatherObject.main.temp_max) + "° F";
+    document.getElementById('curtemp').textContent = Math.round(weatherObject.main.temp) + "° F";
+    document.getElementById('curhumidity').textContent = weatherObject.main.humidity + "%";
+    document.getElementById('curwind').textContent = Math.round(weatherObject.wind.speed) + " mph";
+
+/* JavaScript to calculate the windchill in the weather summary. */
+var high = weatherObject.main.temp;
+var windSpeed = weatherObject.wind.speed;
+var windMilesPerHour = windSpeed * 0.16;
+var windChillFactor = 35.74 + 0.6215 * high - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * high * Math.pow(windSpeed, 0.16);
+
+if (high <= 50 && windSpeed >= 3) {
+document.getElementById("curwindchill").innerHTML = Math.round(windChillFactor) + "° F";
+}
+else {
+document.getElementById("curwindchill").innerHTML = "N/A";
+}
+});
+
+
+
 //Retrieve Forcast Data for Preston
 let forecastRequest = new XMLHttpRequest();
 let urlfAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
@@ -21,42 +41,6 @@ forecastRequest.onload = function() {
     // Populate the 5 day forecast
     forecastDisplay(forecastData);
 }
-
-weatherRequest.onload = function() {
-        //let weatherData = JSON.parse(weatherRequest.responseText);
-        weatherData = JSON.parse(jsWeatherObject)
-        //Populate Weather Summary with Preston Data
-        weatherDisplay(weatherData);
-    } //End of onload function
-
-// Display Weather Data
-function weatherDisplay(weatherData) {
-
-    console.log(weatherData);
-
-    // Using main instead for array
-
-    document.getElementById("curtemp")
-        .innerHTML = Math.round(weatherData.main.temp);
-    document.getElementById("curhumidity").innerHTML =
-        weatherData.main.humidity;
-    document.getElementById("curwind")
-        .innerHTML = weatherData.wind.speed;
-    document.getElementById("curdesc").innerHTML = weatherData.weather[0].description;
-
-    // Calculate Wind Chill Value
-    var cur_temp = weatherData.main.temp;
-    var cur_wind = weatherData.wind.speed;
-    document.getElementById("curwindchill").innerHTML = calcWindchill(cur_temp, cur_wind);
-
-    // ------------- OWM WindChill Calculator
-    function calcWindchill(temp, wind) {
-        let calcWindchill = 35.74 + (0.6215 * temp) - (35.75 * Math.pow(wind, 0.16)) + (0.4275 * temp) * Math.pow(wind, 0.16);
-
-        calcWindchill = Math.round(calcWindchill);
-        return calcWindchill;
-    }
-} //end of weatherDisplay function
 
 //Forecast Display Function
 function forecastDisplay(forecastData) {
