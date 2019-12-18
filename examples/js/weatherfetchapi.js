@@ -27,25 +27,12 @@ document.getElementById("curwindchill").innerHTML = "N/A";
 });
 
 
-
-//Retrieve Forcast Data for Preston
-let forecastRequest = new XMLHttpRequest();
-let urlfAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
-
-forecastRequest.open('GET', urlfAPI, true);
-
-forecastRequest.send();
-
-forecastRequest.onload = function() {
-    let forecastData = JSON.parse(forecastRequest.responseText);
-    // Populate the 5 day forecast
-    forecastDisplay(forecastData);
-}
-
-//Forecast Display Function
-function forecastDisplay(forecastData) {
-    console.log(forecastData);
-
+const urlfAPI = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=ce06eddfee2de59e3e3a0fabeee489e1&";
+fetch(urlfAPI)
+    .then((response) => response.json())
+    .then((forecastData) => {
+        console.log(forecastData);
+   
     // go through the list of forecast values looking for 18:00 (6:00 p.m.) records and record index
     let hitemp = [];
     let himonth = [];
@@ -60,11 +47,9 @@ function forecastDisplay(forecastData) {
             hiicon[day] = x.weather[0].icon;
             console.log(day, hitemp[day], himonth[day], hiday[day], hiicon[day]);
             day++;
-
         }
     });
-
-    var Months = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
+    let Months = ["Jan.", "Feb.", "Mar.", "Apr.", "May", "Jun.", "Jul.", "Aug.", "Sep.", "Oct.", "Nov.", "Dec."];
 
     // Populate the Header for the Forecast Table
     document.getElementById("day1").innerHTML = Months[himonth[0] - 1] + " " + hiday[0];
@@ -88,4 +73,4 @@ function forecastDisplay(forecastData) {
     document.getElementById("day3temp").innerHTML = hitemp[2];
     document.getElementById("day4temp").innerHTML = hitemp[3];
     document.getElementById("day5temp").innerHTML = hitemp[4];
-} // End of Forecast Display //end of Forecast Display Function
+}); // End of Forecast Display 
