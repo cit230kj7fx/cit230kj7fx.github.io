@@ -53,10 +53,10 @@ fetch(urlfAPI)
 
     // Populate the Header for the Forecast Table
     document.getElementById("day1").innerHTML = Months[himonth[0] - 1] + " " + hiday[0];
-    document.getElementById("day2").innerHTML = Months[himonth[0] - 1] + " " + hiday[1];
-    document.getElementById("day3").innerHTML = Months[himonth[0] - 1] + " " + hiday[2];
-    document.getElementById("day4").innerHTML = Months[himonth[0] - 1] + " " + hiday[3];
-    document.getElementById("day5").innerHTML = Months[himonth[0] - 1] + " " + hiday[4];
+    document.getElementById("day2").innerHTML = Months[himonth[1] - 1] + " " + hiday[1];
+    document.getElementById("day3").innerHTML = Months[himonth[2] - 1] + " " + hiday[2];
+    document.getElementById("day4").innerHTML = Months[himonth[3] - 1] + " " + hiday[3];
+    document.getElementById("day5").innerHTML = Months[himonth[4] - 1] + " " + hiday[4];
 
     // Populate the weather forecast icon
     var basepath = "https://openweathermap.org/img/w/";
